@@ -47,7 +47,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-function goBack(){
-window.history.back()
-}
