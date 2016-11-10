@@ -74,15 +74,16 @@
         <div data-role="header">
             <a href="#mypanel" class="ui-btn ui-icon-bars ui-btn-icon-left">Menu</a>
             <a href="#main" data-transition="slide" data-direction="reverse" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
-            <h1>Otsikko</h1>
+            <h1>Dust II</h1>
         </div> <!-- /header -->
 
         <div data-role="main" class="ui-content">
-            <img src="/img/dust2_map.jpg" alt="No Picture" style=" width:800px; height:800px;" usemap="#dust2map">
 
-            <map name="dust2map">
-                <area alt="Troll" href="#main" shape="rect" coords="384,215,400,230"/>
-            </map>
+                <img id="#maps" src="/img/dust2_map.jpg" alt="No Picture" style=" width:800px; height:800px;" usemap="#dust2map">
+
+                <map name="dust2map">
+                    <area alt="Troll" href="#main" shape="rect" coords="384,215,400,230"/>
+                </map>
 
         </div>
 
@@ -204,7 +205,13 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
     <script type="text/javascript"></script>
+    <script type="text/javascript">
+
+		$('map').imageMapResize();
+
+	</script>
 </body>
 
 </html>

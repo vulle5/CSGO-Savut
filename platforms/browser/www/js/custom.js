@@ -1,6 +1,6 @@
 //Go back to previous page
-function goBack(){
-window.history.back()
+function goBack() {
+    window.history.back();
 }
 
 //Create panel
